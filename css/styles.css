@@ -24,11 +24,11 @@
 body {
   font-family: var(--primary-font);
   color: var(--text-color);
+  background-color: var(--white-background-color);
 }
 
 button {
   cursor: pointer;
-  border-radius: 4%;
 }
 
 .list {
@@ -45,6 +45,8 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .title {
@@ -70,13 +72,13 @@ button {
   font-family: var(--logotype-font);
   font-size: 18px;
   font-weight: 800;
-  line-height: 1, 17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-color);
+  color: var(--primary-brand-color);
 }
 .logotype-text-color {
-  color: var(--primary-brand-color);
+  color: var(--dark-color);
 }
 
 .menu-link {
@@ -92,7 +94,9 @@ button {
 .menu-link:focus {
   color: var(--pressed-state-color);
 }
-
+.address {
+  font-style: normal;
+}
 .menu-address-link {
   font-family: Roboto;
   font-size: 16px;
@@ -100,7 +104,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  font-style: normal;
 }
 
 /* ===== /HEADER ===== */
@@ -110,11 +113,14 @@ button {
 .section-one {
   background-color: var(--dark-color);
   color: var(--white-background-color);
+}
+.section-one-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
+
 .order-services-btn {
   font-size: 16px;
   font-weight: 500;
@@ -124,12 +130,14 @@ button {
   background-color: var(--primary-brand-color);
 }
 
+.order-services-btn:hover,
+.order-services-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+
 /* ===== /HERO ===== */
 
 /* ===== FEATURES ===== */
-.features-hidden {
-  display: none;
-}
 
 /* ===== /FEATURES ===== */
 
@@ -151,8 +159,18 @@ button {
   background-color: var(--dark-color);
 }
 .logo-footer {
-  color: var(--light-color);
+  font-family: var(--logotype-font);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
 }
+.logotype-text-footer {
+  color: var(--white-background-color);
+}
+
 .page-footer-text {
   color: var(--light-color);
 }
